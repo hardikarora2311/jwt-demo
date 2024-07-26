@@ -5,7 +5,7 @@ const audience = "your-audience";
 const issuer = "your-issuer";
 
 
-const token = encode_jwt(secret, "user-id", { role: "admin" }, 3600, audience, issuer);
+const token = await encode_jwt(secret, "user-id", { role: "admin" }, 3600, audience, issuer);
 console.log('Valid Token:', token);
 
 
